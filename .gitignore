@@ -1,0 +1,40 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.db
+*.sqlite3
+*.log
+
+# Django migrations
+*/migrations/*
+
+# Django secret keys
+*.env
+*.env.*
+
+# Virtual Environment
+venv/
+env/
+.venv/
+.env/
+
+# Database files
+db.sqlite3
+
+# PyCharm, VS Code, etc.
+.idea/
+.vscode/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Other
+*.bak
+*.swp
+*.swo
