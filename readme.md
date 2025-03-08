@@ -1,5 +1,5 @@
-STEP 1 Setup DB Config in settings.py :
-// Here is my config, you can change based on your default connection
+Step 1: Set Up Database Configuration in settings.py :
+Here is my default config
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -10,16 +10,18 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+you can modify it based on your default connection in settings.py
 
-STEP 2 Run Migration :
-python manage.py makemigrations
-python manage.py migrate
+Step 2: Run Migrations :
+1. Run "python manage.py makemigrations" on terminal to create migration file
+2. Run "python manage.py migrate" on terminal to create migration table and structure in database
 
 STEP 3 Setup Zapier :
 
 
-STEP 4 Update Zapier Url :
-go to .env.example -> rename to .env -> set ZAPIER_URL value to your zapier url hook value
+Step 4: Update the Zapier URL :
+1. Rename .env.example to .env
+2. Set the ZAPIER_URL value to your Zapier webhook URL
 
 STEP 5 Run Project :
-python manage.py runserver
+Run "python manage.py runserver" on terminal
