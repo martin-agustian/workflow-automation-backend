@@ -21,5 +21,5 @@ from tickets.views import home, ticket_create
 
 urlpatterns = [
     path('', home, name='home'),
-    path('api/ticket/', ticket_create, name='ticket_create'),
+    path('api/ticket_create', ticket_create, name='ticket_create'),
 ]
