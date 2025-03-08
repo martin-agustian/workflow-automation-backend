@@ -15,5 +15,8 @@ STEP 2 Run Migration :
 python manage.py makemigrations
 python manage.py migrate
 
+STEP 3 Update Zapier Url :
+go to .env.example -> rename to .env -> set ZAPIER_URL value to your zapier url hook value
+
 STEP 3 Run Project :
 python manage.py runserver

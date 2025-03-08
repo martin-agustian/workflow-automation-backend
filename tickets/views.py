@@ -1,5 +1,6 @@
 import requests
 from django.db import transaction
+from django.conf import settings
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .serializers import TicketSerializer
@@ -20,7 +21,7 @@ def ticket_create(request):
             ticket = serializer.save()
 
             # Prepare the data to be sent to Zapier
-            zapier_url = "https://hooks.zapier.com/hooks/catch/21964534/2qz1swa/"
+            zapier_url = settings.ZAPIER_URL
             zapier_data = {
                 "name": ticket.name,
                 "description": ticket.description,
