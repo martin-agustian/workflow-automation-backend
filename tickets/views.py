@@ -41,4 +41,4 @@ def ticket_create(request):
 
         else:
             # If the serializer is invalid, no need to call Zapier, just return errors
-            return Response(serializer.errors, status=400)
+            return Response({"message": serializer.errors}, status=400)
